@@ -1,0 +1,4 @@
+oe2mbx : src\oe2mbx.c lib\liboe.obj src\liboe.h
+        bcc32 -DWINDOWS -ebin\oe2mbx.exe src\oe2mbx.c lib\liboe.obj
+lib\liboe.obj : src\liboe.c
+        bcc32 -c -DWINDOWS -olib\liboe.obj src\liboe.c 

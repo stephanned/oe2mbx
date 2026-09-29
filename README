@@ -1,0 +1,33 @@
+To install:
+(Windows users, see README.WIN)
+
+Systemwide (oe2mbx and liboe)
+---------------------------------
+- su root and run ./install.sh
+
+This will install to /usr/bin, /usr/lib and
+/usr/include. Change the prefix to something 
+else in makefile if you want to.
+
+
+Local directory (oe2mbx only)
+---------------------------------
+- just type make. 
+
+Will install a statically linked 
+oe2mbx executable in ./bin
+
+
+Other make targets:
+---------------------------------
+oe2mbx	Make static oe2mbx executable, place it in ./bin
+
+dynamic Make dynamic oe2mbx executable, place it in ./bin
+	(Requires installation of liboe)
+
+liboe	Make liboe library, place it in ./lib
+
+install	Installs any compiled binaries/libraries
+
+
+The header file is available in ./src

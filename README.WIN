@@ -1,0 +1,9 @@
+This version of liboe/oe2mbx has been tested against the Borland C Compiler version 5.5 for Windows. This compiler is freely available from http://www.borland.com/.
+
+To make binary executable and object binary, write:
+make -fmakefile.win
+in the liboe/oe2mbx directory.
+
+If you're only looking for the oe2mbx executable, there should be an already compiled version of it in the subdirectory named "bin". Please remember to read the license before distributing this software.
+
+Stephan Nedregaard

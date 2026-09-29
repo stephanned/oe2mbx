@@ -1,0 +1,31 @@
+2000-06-19  Stephan Nedregaard  <stephan@micropop.com>
+
+	* src/liboe.c: BUG FIXING (OE4 SUPPORT)
+	An unexpected bug lead to some messages starting
+	with the last string from the previous message.
+	This bug has now been corrected, the program has
+	been tested with relatively large OE4 boxes...
+	Time to release 0.92.
+
+2000-06-17  Stephan Nedregaard  <stephan@micropop.com>
+
+	* src/oe2mbx.c: WINDOWS COMPATIBILITY (for 1.21)
+	Minor modfifications, none of which mean anything to 
+	Linux users. oe2mbx now compiles on Windows and 
+	successfully converted both OE5 and OE4 mailboxes.
+
+	* src/liboe.c: WINDOWS COMPATIBILITY (for 0.92)
+	Added Windows source compatibility. 
+
+	* src/liboe.c: ADDED OE4 FORMAT (oe_readbox_oe4) (for 0.92)
+	Provides experimental support for OE4 mailboxes. Reads 
+	mailbox files (*.mbx), doesn't care about index files 
+	(*.idx), as it's easier not to. Never call this directly, 
+	oe_readbox automatically detects OE4 boxes when it is 
+	detected that the box is not an OE5 mailbox.
+
+
+
+
+
+	
